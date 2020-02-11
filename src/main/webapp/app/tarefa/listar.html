@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+     <div class="col-xs-12">
+      
+      <table class="table table-bordered table-striped table-hover">
+       <thead>
+          <tr>
+            <th width="90">Data</th>
+            <th>Status</th>
+            <th>Descrição</th>
+          </tr>
+       </thead>
+        
+       <tbody>
+               
+          <tr ng-repeat="tarefa in listar">
+            <td>{{ tarefa.data }}</td>
+            <td>{{ tarefa.status }}</td>
+            <td>{{ tarefa.descricao }}</td>
+          </tr>
+               
+       </tbody>
+        
+      </table>
+             
+     </div>
+   </div>
+</div>
